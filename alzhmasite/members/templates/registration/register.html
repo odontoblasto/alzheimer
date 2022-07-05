@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Register{% endblock%}
+
+{% block content %}
+<h1>Seja Bem-Vindo.... </h1>
+<hr>
+<h2>Faça seu Cadastro abaixo....</h2>
+
+<div class="form-group">
+<form method ="POST">  
+      {% csrf_token %}
+      {{form.as_p}}<!---as any html component,p,ul,table..--->
+<button class="btn btn-secondary">Cadastrar</button>
+</div>
+ {% endblock %} 

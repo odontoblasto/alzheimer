@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+
+
+{% block title%}Home{% endblock %}
+
+{% block content %}
+<nav>
+    <div class="container-fluid">
+        <div class="navbar-nav">
+        <a class="nav-link active"  href="{% url 'main:index' %}"><strong> Saiba mais...</strong>
+           </a>
+        </div>
+    </div>
+  </nav>
+<img src="../media/images/home_pic.jpg" alt="Imagem Home"width='85%' height="auto">
+
+
+
+{% endblock %}

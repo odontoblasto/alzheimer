@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<div class="mhteam">
+    <img src="../media/images/mh_team_logo.png" alt="Logo MH Team" width="30%" height="auto">
+    <h1>Saiba mais....</h1>
+</div>
+<hr>
+<ul>
+    <li><h2><a href="{% url 'main:projeto' %}">Projeto Alzhma</a></h2></li>
+    <hr>
+    <li><h2><a href="{% url 'main:info_site' %}">Como usar o site</a></h2></li>
+</ul>
+
+
+{% endblock %}
